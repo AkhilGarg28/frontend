@@ -1,0 +1,150 @@
+
+:root {
+  --text: #1f2937;
+  --subtext: #4b5563;
+  --bg: #ffffff;
+  --accent: #2563eb;
+  --muted: #f3f4f6;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.section {
+  margin: 28px 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 12px;
+}
+
+h2 {
+  border-left: 6px solid var(--accent);
+  padding-left: 10px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-top: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #D6A99D;
+}
+
+#profile-pic {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--muted);
+}
+#card-pic:hover{
+  width: 50%;
+}
+.name {
+  font-size: 2rem;
+  letter-spacing: 0.2px;
+}
+
+.tagline {
+  margin-top: 4px;
+  font-weight: 500;
+  color: var(--subtext);
+}
+
+.contact-list,
+.skills-list,
+.hobby-list {
+  margin: 0;
+  padding-left: 18px;
+  background-color: #FBF3D5;
+}
+#contact {
+    background-color: #D6DAC8;
+}
+
+.contact-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.skill-meters label {
+  display: block;
+  margin: 6px 0;
+  color: var(--subtext);
+}
+
+progress {
+  width: 220px;
+  height: 14px;
+}
+
+.project-title {
+  margin: 0 0 6px;
+}
+
+.project-text {
+  margin: 0;
+  color: var(--subtext);
+}
+
+#footer {
+  text-align: center;
+  padding: 18px;
+  margin-top: 24px;
+  background: var(--muted);
+  color: var(--subtext);
+  font-size: 0.95rem;
+}
+
+.card  {
+    width: 200px;
+    height: 220px;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 0 4px 8px black;
+    margin: 20px;
+    background-color: azure;
+
+}
+
+
+.desc {
+    padding: 0px 2px 0px 2px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px black;
+    background-color: antiquewhite;
+    width: 50%;
+}
+.img {
+    height: 100px;
+    width: 200px;
+    border-radius: 10px 10px 0 0;
+
+}
